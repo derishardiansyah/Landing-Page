@@ -1,0 +1,743 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.main-screen1 {
+  width: 1440px;
+  height: 960px;
+  margin-top: 0.43px;
+  background-image: url(Assets/main-bg.jpg);
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  width: 100%;
+  height: 90px;
+  background: #00000080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 20px; */
+}
+
+.logo {
+  width: 77px;
+  height: 33px;
+  margin-left: 70px;
+  font-family: arial;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.68px;
+  letter-spacing: 10%;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -300px;
+}
+
+.header-nav span {
+  margin-left: 70px;
+  color: white;
+  font-size: 12px;
+}
+
+.login-nav {
+  margin-right: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-nav span {
+  color: white;
+  font-size: 12px;
+  margin: 10px;
+}
+
+button {
+  width: 260.36px;
+  height: 60px;
+  background-color: #ffb548;
+  border-radius: 5px;
+  border: #ffb548;
+}
+
+.button1 {
+  margin-top: 50px;
+  margin-left: 588px;
+  color: #1a1917;
+  font-size: 16px;
+  line-height: 21.79px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 700;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Bagian Content */
+.tulisan-content {
+  font-family: arial;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 82.79px;
+  letter-spacing: 3px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.penambahan-content {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27.6px;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 260.36px;
+  height: 60px;
+  background-color: #ffb548;
+  border-radius: 5px;
+  border: none;
+  margin: 30px auto;
+  display: block;
+}
+
+.story-name {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+  color: white;
+  font-weight: 700;
+}
+
+.story {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.panah {
+  width: 40px;
+  margin-top: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.story {
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .header-nav,
+  .login-nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .header-nav span,
+  .login-nav span {
+    margin: 5px;
+  }
+
+  .tulisan-content {
+    font-size: 48px;
+    line-height: 60px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .penambahan-content {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  button {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+  }
+
+  .story {
+    margin-top: 30px;
+  }
+}
+.main-screen2 {
+  width: 1440px;
+  height: 960px;
+  margin-top: -10px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.3) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("Assets/the-games-bg.jpg");
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 1440px;
+  height: 987px;
+  display: flex;
+  flex-direction: column;
+}
+
+.swiffy-slider {
+  max-width: 50%;
+  height: 50%;
+  margin-left: 500px;
+  margin-top: -70px;
+}
+
+.tulisan-content2 {
+  width: 262.29px;
+  height: 28.42px;
+  margin-top: 281.11px;
+  margin-left: 82.01px;
+  font-family: arial;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27.6px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.tulisan-content3 {
+  width: 411.5px;
+  height: 73.64px;
+  margin-top: 1px;
+  margin-left: 78px;
+  font-family: arial;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64.39px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.rotasi {
+  transform: rotate(90deg);
+}
+
+.rotasi2 {
+  transform: rotate(268deg);
+}
+
+.carousel-item {
+  margin-top: -100px;
+  margin-left: 453px;
+}
+
+.image-2 {
+  width: 858px;
+  height: 477px;
+}
+
+.main-screen3 {
+  width: 1440px;
+  height: 960px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.3) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("Assets/Group.jpg");
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  width: 1440px;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-3 {
+  width: 262.29px;
+  height: 27.67px;
+  margin-top: 258px;
+  margin-left: 800px;
+  font-size: 24px;
+  font-family: arial;
+  font-weight: 400;
+  line-height: 27.6px;
+  color: white;
+}
+
+.h2-content {
+  width: 411.5px;
+  height: 73.64px;
+  margin-top: -10px;
+  margin-left: 796px;
+  font-size: 56px;
+  font-weight: 400;
+  font-family: arial;
+  line-height: 64px;
+  color: white;
+}
+
+.caption-content3 {
+  width: 362px;
+  height: 77px;
+  margin-top: -20px;
+  margin-left: 847px;
+}
+
+.caption-3 {
+  /* width: 348px;
+    height: 38px; */
+  /* margin-top: 28px;
+    margin-left: 500px; */
+  font-size: 24px;
+  font-family: arial;
+  font-weight: 400;
+  text-align: center;
+  color: #ffb548;
+  line-height: 27.6px;
+}
+
+.caption-3-1 {
+  /* width: 362px;
+    height: 77px;
+    margin-top: 10px;
+    margin-left: 847px; */
+  margin-top: 10px;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: white;
+}
+
+.caption-3-2 {
+  /* width: 348px;
+    height: 38px; */
+  /* margin-top: 28px;
+    margin-left: 500px; */
+  margin-top: 50px;
+  font-size: 24px;
+  font-family: arial;
+  font-weight: 400;
+  text-align: center;
+  color: #ffb548;
+  line-height: 27.6px;
+  margin-left: -225px;
+}
+
+.caption-3-3 {
+  /* width: 348px;
+    height: 38px; */
+  /* margin-top: 28px;
+    margin-left: 500px; */
+  margin-top: 50px;
+  font-size: 24px;
+  font-family: arial;
+  font-weight: 400;
+  text-align: center;
+  color: #ffb548;
+  line-height: 27.6px;
+  margin-left: -300px;
+}
+
+.main-screen4 {
+  width: 1440px;
+  height: 960px;
+  background-image: URL(Assets/requirements.png);
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.caption-4 {
+  width: 253px;
+  margin-top: 141px;
+  font-size: 14px;
+  margin-left: 600px;
+  font-family: arial;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+}
+
+.caption-4-1 {
+  width: 400px;
+  height: 73.6px;
+  margin-top: 100px;
+  margin-left: 130px;
+  font-size: 56px;
+  font-family: arial;
+  line-height: 64px;
+  font-weight: 400;
+  color: white;
+}
+
+.table1 {
+  width: 573px;
+  height: 400px;
+  margin-left: 120px;
+  margin-top: 40px;
+  font-family: arial;
+  border-collapse: collapse;
+}
+
+.table1,
+th,
+td {
+  border: 1px solid #979797;
+  padding: 12px 12px;
+}
+
+.spesifikasi {
+  color: #ffb548;
+  font-size: 24px;
+  width: 261px;
+  height: 27px;
+  margin-left: 40px;
+}
+
+.caption-spesifikasi {
+  color: white;
+  font-size: 18px;
+  font-family: arial;
+  font-weight: 400;
+  width: 257px;
+  height: 44px;
+}
+
+.main-screen5 {
+  width: 1440px;
+  height: 960px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.3) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("Assets/bg-image.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin-top: -10px;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content-caption-5 {
+  width: 379px;
+  height: 57px;
+  margin-top: -100px;
+  margin-left: 120px;
+  font-size: 18px;
+  font-family: arial;
+  line-height: 22px;
+  font-weight: 400;
+  color: white;
+}
+
+.content-5 {
+  width: 410px;
+  height: 153px;
+  margin-top: 339px;
+  margin-left: 117px;
+  font-size: 56px;
+  font-family: arial;
+  font-weight: 400;
+  line-height: 64px;
+  color: white;
+}
+
+.button-content-5 {
+  margin-top: 50px;
+  margin-left: 117px;
+  color: #1a1917;
+  font-size: 16px;
+  line-height: 21.79px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 700;
+}
+
+.box {
+  width: 497px;
+  height: 200px;
+  margin-top: -439px;
+  margin-left: 867px;
+  background: #ffffff14;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.box1 {
+  width: 497px;
+  height: 200px;
+  margin-left: 767px;
+  background: #ffffff14;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.box2 {
+  width: 497px;
+  height: 200px;
+  margin-left: 867px;
+  background: #ffffff14;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.image-8 {
+  margin-left: 15px;
+  margin-top: 15px;
+  box-shadow: 6px 3px rgba(255, 181, 72, 1);
+  border-radius: 100px;
+  width: 400px;
+}
+
+.name-image {
+  color: #ffb548;
+  font-size: 24px;
+  width: 300px;
+  height: 27px;
+  font-family: arial;
+  font-weight: 400;
+  display: flex;
+}
+
+.image-8-1 {
+  margin-left: 130px;
+  margin-top: -65px;
+}
+
+.profesi {
+  display: flex;
+  opacity: 50%;
+  color: white;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  margin-left: 130px;
+}
+.caption-5-1 {
+  margin-top: -60px;
+}
+
+.ulasan {
+  display: flex;
+  font-size: 18px;
+  font-family: arial;
+  color: white;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+.caption-5-2 {
+  margin-top: 10px;
+}
+
+.date {
+  color: white;
+  font-family: arial;
+  font-size: 14px;
+  opacity: 50%;
+  margin-left: 15px;
+}
+
+.caption-5-3 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.icon-content-5 {
+  margin-left: 450px;
+  margin-top: -140px;
+}
+
+.main-screen6 {
+  width: 1440px;
+  height: 960px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.3) 20%,
+      rgba(0, 0, 0, 0.3) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("Assets/newsletter.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-6 {
+  font-size: 24px;
+  font-family: arial;
+  color: white;
+  width: 220px;
+  height: 27px;
+  margin-left: 675px;
+  margin-top: 136px;
+  font-weight: 400;
+}
+
+.content-6-1 {
+  width: 677px;
+  height: 76px;
+  margin-left: 672px;
+  font-family: arial;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 74px;
+  color: white;
+}
+
+.content-6-2 {
+  width: 644px;
+  height: 136px;
+  margin-left: 675px;
+  font-family: arial;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-top: 50px;
+}
+
+.email-form {
+  padding: 12px 24px;
+}
+
+.input-text {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  padding-left: 10px;
+  width: 428px;
+  height: 70px;
+  margin-left: 650px;
+}
+
+.button-content-6 {
+  height: 70px;
+  margin-top: 50px;
+  margin-left: 1000px;
+  color: #1a1917;
+  font-size: 16px;
+  line-height: 21.79px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 700;
+  margin-top: -80px;
+}
+
+.footer {
+  width: 1440px;
+  height: 150px;
+  background: black;
+}
+
+.footer-main {
+  margin-left: 230px;
+  margin-top: -100px;
+}
+
+.footer-main span {
+  margin-right: 80px;
+  color: white;
+  font-size: 12px;
+}
+
+.social-list {
+  display: flex;
+  column-gap: 80px;
+  margin-left: 760px;
+  margin-top: -35px;
+}
+
+.line-footer {
+  border: 0.87px solid #ffffff;
+  /* margin-left: 10px;
+    border: 0.87px; */
+  opacity: 0.5px;
+  width: 1290px;
+}
+
+.copyright {
+  width: 339px;
+  height: 21px;
+  opacity: 50%;
+  font-size: 14px;
+  font-family: arial;
+  color: white;
+  margin-left: 73px;
+}
+
+.privacy {
+  width: 339px;
+  height: 21px;
+  opacity: 50%;
+  font-size: 14px;
+  font-family: arial;
+  color: white;
+  margin-left: 680px;
+}
